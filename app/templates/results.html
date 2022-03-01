@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class = "pokemon-image" allign="middle">
+        <img src="{{image}}" allign="middle" />
+    </div>
+    Name: {{name}} <br>
+    Height: {{height}} cm <br>
+    Weight: {{weight}} kg <br>
+
+    <form action="/" method="post">
+        <input type="submit" name="submit_button" value="Try another Pokemon">
+    </form>
+
+{% endblock %}

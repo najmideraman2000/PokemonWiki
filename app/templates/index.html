@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Pokemon Search</h1>
+    <form action="/results" method="get">
+        <input autocomplete="off" autofocus="on" name="name" placeholder="Name" type="text">
+    </form>
+
+{% endblock %}
